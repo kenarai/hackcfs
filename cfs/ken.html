@@ -1,17 +1,683 @@
 <!DOCTYPE html>
 <html>
   <head>
+
    <link data-require="bootstrap-css@3.2.0" data-semver="3.2.0" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
    <script data-require="ui-bootstrap@0.11.0" data-semver="0.11.0" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
    <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <meta charset="utf-8">
+
+   <link href="css/common.css" rel="stylesheet">
+   <script src="js/ken.js"></script>
+
+   <meta charset="utf-8">
     <title>Community Food Share</title>
   </head>
   <body>
-    
-    Hello world !
-    
+
+
+                                                   <a data-toggle="modal" href="#modal-4">
+                                                      <div class="myButton4 inner_adj_7">
+                                                                        Donate!
+                                                        </div>
+                                                    </a>
+
+
+                                                    <!-- Modal -->
+                                                    <div class="modal" id="modal-4">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content modal_specification">
+                                                                <div class="widget-body">
+                                                                    <div class="modal_frame_1">
+                                                                        <div id="msform" class="animated fadeInUp">
+                                                                            <fieldset class="modal_emb_1">
+                                                                                <div id="login-form">
+                                                                                    <h3>
+                                                                                        <p class="modal_headline">
+                                                                                            Let's reserve your spot now. <br>
+                                                                                            It's simple and easy.
+                                                                                        </p>
+                                                                                        <div class="request_container_r modal_adj_1">
+                                                                                            <div class="column-you_r">
+                                                                                                <img src="../assets/images/people/80/11.jpg" class="img-circle modal_adj_3"><br>
+                                                                                                You
+                                                                                            </div>
+                                                                                            <div class="column-arrow-right_r modal_adj_2">
+                                                                                                <img src="img/arrow_right_r.png">
+                                                                                            </div>
+                                                                                            <div class="column-rcv_r">
+                                                                                                <img src="img/biz_face.png" class="img-circle modal_adj_3"><br>
+                                                                                                Zolo Grill NYC
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        User Policy and dress code
+                                                                                    </h3>
+                                                                                    <div class="field">
+                                                                                        <form action="javascript:void(0);" method="get" class="modal_center">
+                                                                                            <div class="modal_adj_4">
+                                                                                                <input class="checkbox" id="check-1" type="checkbox">
+                                                                                                <label tabindex="1" for="check-1" class="checkbox-label"></label>
+                                                                                            </div>
+                                                                                            <div class="modal_agreement">
+                                                                                                I understand and agree with User Policy of Dineify and will obey to dress code set by the chef.
+                                                                                            </div>
+                                                                                        </form>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <input type="submit" name="next_rs" class="next_rs action-button" value="Next" id="Next-1"/>
+                                                                            </fieldset>
+                                                                            <fieldset class="modal_emb_1">
+                                                                                <div id="login-form">
+                                                                                    <h3>
+                                                                                        <p class="modal_headline">
+                                                                                            Would you like to invite your friends?
+                                                                                        </p>
+                                                                                        Pssst... You are not paying for your friends. <br>
+                                                                                    </h3>
+                                                                                    <div class="field">
+                                                                                        <form action="javascript:void(0);" method="get" class="modal_center">
+                                                                                            <div class="modal_align_1">
+                                                                                                <input class="radio" id="id_radio2" type="radio" name="a_SignatureOption" value="2">
+                                                                                                <label tabindex="id_radio2" for="id_radio2" class="radio-label">Yes, I want to send invitations:</label>
+                                                                                                <br/>
+                                                                                                <input class="radio" id="id_radio1" type="radio" name="a_SignatureOption" value="1">
+                                                                                                <label tabindex="id_radio1" for="id_radio1" class="radio-label">Nope, I'll skip for now.</label>
+                                                                                                <br/>
+                                                                                                <div id="div1" class="modal_js_option_1">
+                                                                                                    <div class="affiliate-grid-container">
+                                                                                                        <div class="affiliate-grid">
+                                                                                                            <label for="input1">
+                                                                                                            <input type="checkbox" id="input1" class="affiliate-select"/>
+                                                                                                            <img src="../assets/images/people/80/1.jpg" class="img-circle" alt="" class="affiliate-prod-img"/>
+                                                                                                            <img src="img/fb_friend.png" class="img-circle modal_social_sign"/>
+                                                                                                            </label>
+                                                                                                        </div>
+                                                                                                        <div class="affiliate-grid">
+                                                                                                            <label for="input2">
+                                                                                                            <input type="checkbox" id="input2" class="affiliate-select"/>
+                                                                                                            <img src="../assets/images/people/80/2.jpg" class="img-circle" alt="" class="affiliate-prod-img"/>
+                                                                                                            <img src="img/in_friend.png" class="img-circle modal_social_sign"/>
+                                                                                                            </label>
+                                                                                                        </div>
+                                                                                                        <div class="affiliate-grid">
+                                                                                                            <label for="input3">
+                                                                                                            <input type="checkbox" id="input3" class="affiliate-select"/>
+                                                                                                            <img src="../assets/images/people/80/3.jpg" class="img-circle" alt="" class="affiliate-prod-img"/>
+                                                                                                            </label>
+                                                                                                        </div>
+                                                                                                        <div class="affiliate-grid">
+                                                                                                            <label for="input4">
+                                                                                                            <input type="checkbox" id="input4" class="affiliate-select"/>
+                                                                                                            <img src="../assets/images/people/80/4.jpg" class="img-circle" alt="" class="affiliate-prod-img"/>
+                                                                                                            <img src="img/fb_friend.png" class="img-circle modal_social_sign"/>
+                                                                                                            </label>
+                                                                                                        </div>
+                                                                                                        <div class="affiliate-grid">
+                                                                                                            <label for="input5">
+                                                                                                            <input type="checkbox" id="input5" class="affiliate-select"/>
+                                                                                                            <img src="../assets/images/people/80/5.jpg" class="img-circle" alt="" class="affiliate-prod-img"/>
+                                                                                                            <img src="img/fb_friend.png" class="img-circle modal_social_sign"/>
+                                                                                                            </label>
+                                                                                                        </div>
+                                                                                                        <div class="affiliate-grid">
+                                                                                                            <label for="input6">
+                                                                                                            <input type="checkbox" id="input6" class="affiliate-select"/>
+                                                                                                            <img src="../assets/images/people/80/6.jpg" class="img-circle" alt="" class="affiliate-prod-img"/>
+                                                                                                            <img src="img/in_friend.png" class="img-circle modal_social_sign"/>
+                                                                                                            </label>
+                                                                                                        </div>
+                                                                                                        <div class="affiliate-grid">
+                                                                                                            <label for="input7">
+                                                                                                            <input type="checkbox" id="input7" class="affiliate-select"/>
+                                                                                                            <img src="../assets/images/people/80/7.jpg" class="img-circle" alt="" class="affiliate-prod-img"/>
+                                                                                                            </label>
+                                                                                                        </div>
+                                                                                                        <div class="affiliate-grid">
+                                                                                                            <label for="input8">
+                                                                                                            <input type="checkbox" id="input8" class="affiliate-select"/>
+                                                                                                            <img src="../assets/images/people/80/8.jpg" class="img-circle" alt="" class="affiliate-prod-img"/>
+                                                                                                            <img src="img/in_friend.png" class="img-circle modal_social_sign"/>
+                                                                                                            </label>
+                                                                                                        </div>
+                                                                                                        <div class="affiliate-grid">
+                                                                                                            <label for="input9">
+                                                                                                            <input type="checkbox" id="input9" class="affiliate-select"/>
+                                                                                                            <img src="../assets/images/people/80/9.jpg" class="img-circle" alt="" class="affiliate-prod-img"/>
+                                                                                                            </label>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </form>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <input type="button" name="previous" class="previous action-button_2" value="Previous"/>
+                                                                                <input type="submit" name="next_rs" class="next_rs action-button" value="Next" id="commandButton_1_0"/>
+                                                                            </fieldset>
+                                                                            <fieldset class="modal_emb_1">
+                                                                                <div id="login-form">
+                                                                                    <h3>
+                                                                                        <p class="modal_headline">
+                                                                                            Do you have any allergies or dietary restrictions?
+                                                                                        </p>
+                                                                                        i.e., "I'm allergic to almonds."
+                                                                                    </h3>
+                                                                                    <div class="field">
+                                                                                        <form action="javascript:void(0);" method="get" class="modal_center">
+                                                                                            <div class="modal_align_1">
+                                                                                                <input class="radio" id="id_radio4" type="radio" name="b_SignatureOption" value="4">
+                                                                                                <label tabindex="id_radio4" for="id_radio4" class="radio-label">Yes, I actually do!</label>
+                                                                                                <br/>
+                                                                                                <input class="radio" id="id_radio3" type="radio" name="b_SignatureOption" value="3">
+                                                                                                <label tabindex="id_radio3" for="id_radio3" class="radio-label">Nope, I'll skip for now.</label>
+                                                                                                <br/>
+                                                                                                <div id="div2" class="modal_js_option_1">
+                                                                                        <form class="text-right innerAll modal_adj_5">
+                                                                                        <div class="innerB">
+                                                                                        <textarea name="" id="" cols="30" rows="4" class="form-control rounded-none margin-bottom notebook modal_form_spec_1" placeholder="Please enter your request here. ;-)"></textarea>
+                                                                                        </div>
+                                                                                        </form>
+                                                                                        </div>
+                                                                                        </div>
+                                                                                        </form>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <input type="button" name="previous" class="previous action-button_2" value="Previous"/>
+                                                                                <input type="submit" name="next_rs" class="next_rs action-button" value="Next" id="commandButton_2_0"/>
+                                                                            </fieldset>
+                                                                            <fieldset class="modal_emb_1">
+                                                                                <div id="login-form">
+                                                                                    <h3>
+                                                                                        <p class="modal_headline">
+                                                                                            How many tickets are you buying?
+                                                                                        </p>
+                                                                                        One ticket per person ;-). <br>
+                                                                                    </h3>
+                                                                                    <div class="field">
+                                                                                        <form action="javascript:void(0);" method="get" class="modal_center">
+                                                                                            <div class="guest_con">
+                                                                                                <img src="../assets/images/people/80/11.jpg" class="img-circle modal_for_face"/>
+                                                                                                <div class="cus_g">
+                                                                                                    +
+                                                                                                </div>
+                                                                                                <div class="guest_add">
+                                                                                                    <p class="number_g">
+                                                                                                        <i class="fa fa-user"></i>
+                                                                                                    </p>
+                                                                                                    <p class="modal_escort">
+                                                                                                        escorts
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <h1 class="modal_payment">
+                                                                                                Please note that unless you make a payment, no official appointment will be made. Additional charge may apply in according to your requests t.
+                                                                                            </h1>
+                                                                                            <br>
+                                                                                            <div class="shopping-cart">
+                                                                                                <div class="product">
+                                                                                                    <div class="product-price">
+                                                                                                        60.00
+                                                                                                    </div>
+                                                                                                    <div class="product-time-cus">
+                                                                                                        <i class="fa fa-times"></i>
+                                                                                                    </div>
+                                                                                                    <div class="product-quantity">
+                                                                                                        <input type="number" value="1" min="1">
+                                                                                                    </div>
+                                                                                                    <div class="product-eq-cus">
+                                                                                                        =
+                                                                                                    </div>
+                                                                                                    <div class="product-line-price">
+                                                                                                        60.00
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="totals">
+                                                                                                    <div class="totals-item">
+                                                                                                        <label>Subtotal</label>
+                                                                                                        <div class="totals-value" id="cart-subtotal">
+                                                                                                            60.00
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="totals-item">
+                                                                                                        <label>Transaction fee (8.5%)</label>
+                                                                                                        <div class="totals-value" id="cart-tax">
+                                                                                                            5.1
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="totals-item totals-item-total">
+                                                                                                        <label>Grand Total</label>
+                                                                                                        <div class="totals-value" id="cart-total">
+                                                                                                            65.1
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </form>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <input type="button" name="previous" class="previous action-button_2" value="Previous"/>
+                                                                                <input type="submit" name="next_rs" class="next_rs action-button" value="Next" id="commandButton_1_0"/>
+                                                                            </fieldset>
+                                                                            <fieldset class="modal_emb_1">
+                                                                                <div id="login-form">
+                                                                                    <h3>
+                                                                                        <p class="modal_headline">
+                                                                                            Final step. <br>
+                                                                                            Let's take care of payment.
+                                                                                        </p>
+                                                                                        You will receive payment confirmation and be able to check the event status from your profile.
+                                                                                    </h3>
+                                                                                    <div class="field">
+                                                                                        <form action="javascript:void(0);" method="get" class="modal_center">
+                                                                                            <div class="modal_align_1">
+                                                                                                <input class="radio" id="id_radio5" type="radio" name="c_SignatureOption" value="8">
+                                                                                                <label tabindex="id_radio5" for="id_radio5" class="radio-label">Pay with my credit card</label>
+                                                                                                <br/>
+                                                                                                <div id="div4" class="modal_js_option_2">
+                                                                                                    <input class="radio" id="id_radio7" type="radio" name="c_SignatureOption" value="5">
+                                                                                                    <label tabindex="id_radio7" for="id_radio7" class="radio-label">Use a new card</label>
+                                                                                                    <div id="div5" class="modal_js_option_3">
+                                                                                                        <section>
+                                                                                                            <!-- START FORM -->
+                                                                                                            <div class="credit-card-input no-js clearfix modal_align_2" id="skeuocard">
+                                                                                                                <p class="no-support-warning">
+                                                                                                                    Either you have Javascript disabled, or you're using an unsupported browser, amigo! That's why you're seeing this old-school credit card input form instead of a fancy new Skeuocard. On the other hand, at least you know it gracefully degrades...
+                                                                                                                </p>
+                                                                                                                <label for="cc_type">Card Type</label>
+                                                                                                                <select name="cc_type">
+                                                                                                                    <option value="">...</option>
+                                                                                                                    <option value="visa">Visa</option>
+                                                                                                                    <option value="discover">Discover</option>
+                                                                                                                    <option value="mastercard">MasterCard</option>
+                                                                                                                    <option value="maestro">Maestro</option>
+                                                                                                                    <option value="jcb">JCB</option>
+                                                                                                                    <option value="unionpay">China UnionPay</option>
+                                                                                                                    <option value="amex">American Express</option>
+                                                                                                                    <option value="dinersclubintl">Diners Club</option>
+                                                                                                                </select>
+                                                                                                                <label for="cc_number">Card Number</label>
+                                                                                                                <input type="text" name="cc_number" id="cc_number" placeholder="XXXX XXXX XXXX" maxlength="19" size="19">
+                                                                                                                <label for="cc_exp_month">Expiration Month</label>
+                                                                                                                <input type="text" name="cc_exp_month" id="cc_exp_month" placeholder="00">
+                                                                                                                <label for="cc_exp_year">Expiration Year</label>
+                                                                                                                <input type="text" name="cc_exp_year" id="cc_exp_year" placeholder="00">
+                                                                                                                <label for="cc_name">Cardholder's Name</label>
+                                                                                                                <input type="text" name="cc_name" id="cc_name" placeholder="John Doe">
+                                                                                                                <label for="cc_cvc">Card Validation Code</label>
+                                                                                                                <input type="text" name="cc_cvc" id="cc_cvc" placeholder="123" maxlength="3" size="3">
+                                                                                                            </div>
+                                                                                                            <!-- END FORM -->
+                                                                                                        </section>
+                                                                                                        <div class="col-md-12 modal_adj_6">
+                                                                                                            <div class="innerAll">
+                                                                                                                <div class="modal_adj_7">
+                                                                                                                    Billing Address <br>
+                                                                                                                    <input type="text" placeholder="450 Serra Mall Stanford, CA" class="form-control modal_form_adj_1"/>
+                                                                                                                    <input type="text" placeholder="Apt# 123" class="form-control"/>
+                                                                                                                    <br>
+                                                                                                                    Zip code <br>
+                                                                                                                    <input type="text" placeholder="94305–2004" class="form-control modal_form_adj_2"/>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <br>
+                                                                                                    <input class="radio" id="id_radio8" type="radio" name="c_SignatureOption" value="6">
+                                                                                                    <label tabindex="id_radio8" for="id_radio8" class="radio-label">Most recenly used card</label>
+                                                                                                    <div id="div6" class="modal_js_option_4">
+                                                                                                        <div class="pu_card_container">
+                                                                                                            <div class="pu_card_title">
+                                                                                                                Credit card #:
+                                                                                                            </div>
+                                                                                                            <div class="pu_card_content">
+                                                                                                                ****&nbsp;****&nbsp;****&nbsp;9080
+                                                                                                            </div>
+                                                                                                            <div class="modal_adj_8">
+                                                                                                                <p class="modal_adj_9">
+                                                                                                                    <strong>Billing address:</strong><br/>
+                                                                                                                    <input class="form-control" id="focusedInput" type="text" value="450 Serra Mall Stanford, CA" style="margin-top:10px;">
+                                                                                                                    <input class="form-control" id="focusedInput" type="text" value="Apt# 123">
+                                                                                                                </p>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <input class="radio" id="id_radio6" type="radio" name="c_SignatureOption" value="7">
+                                                                                                <label tabindex="id_radio6" for="id_radio6" class="radio-label">Pay with PayPal</label>
+                                                                                                <br/>
+                                                                                                <div id="div3" class="modal_js_option_3">
+                                                                                                    <div class="row">
+                                                                                                        <div class="col-md-3">
+                                                                                                            <img src="img/pp.png" width="80" class="modal_paypal_adj">
+                                                                                                        </div>
+                                                                                                        <div class="col-md-9">
+                                                                                                            <strong style="margin-bottom:10px;">PayPal Email Address:</strong><br/>
+                                                                                                            <input class="form-control modal_form_adj_2" id="focusedInput" type="text" placeholder="name@sample.com">
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </form>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <input type="button" name="previous" class="previous action-button_2" value="Previous"/>
+                                                                                <input type="submit" name="submit" class="submit action-button" value="Place the reservation" id="commandButton_3_0" style="width: 180px;"/>
+                                                                            </fieldset>
+                                                                            <div class="hidden" id="processing_data">
+                                                                                <div class="spinner">
+                                                                                    <div class="rect1">
+                                                                                    </div>
+                                                                                    <div class="rect2">
+                                                                                    </div>
+                                                                                    <div class="rect3">
+                                                                                    </div>
+                                                                                    <div class="rect4">
+                                                                                    </div>
+                                                                                    <div class="rect5">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <h1 class="modal_fin_process">
+                                                                                    Processing...
+                                                                                </h1>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!-- jQuery easing plugin -->
+                                                                        <script src="jquery.easing.min.js" type="text/javascript"></script>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+</div>
   </body>
 </html>
+<script>
+                        $(function() {
+
+                            //jQuery time
+                            var current_fs, next_fs, previous_fs; //fieldsets
+                            var left, opacity, scale; //fieldset properties which we will animate
+                            var animating; //flag to prevent quick multi-click glitches
+
+                            $(".next_rs").click(function(){
+                            if(animating) return false;
+                            animating = true;
+
+                            current_fs = $(this).parent();
+                            next_fs = $(this).parent().next();
+
+                            //activate next step on progressbar using the index of next_fs
+                            $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+                            //show the next fieldset
+                            next_fs.show();
+                            //hide the current fieldset with style
+                            current_fs.animate({opacity: 0}, {
+                                step: function(now, mx) {
+                                    //as the opacity of current_fs reduces to 0 - stored in "now"
+                                    //1. scale current_fs down to 80%
+                                    scale = 1 - (1 - now) * 0.1;
+                                    //2. bring next_fs from the right(50%)
+                                    left = (now * 50)+"%";
+                                    //3. increase opacity of next_fs to 1 as it moves in
+                                    opacity = 1 - now;
+                                    current_fs.css({'transform': 'scale('+scale+')'});
+                                    next_fs.css({'left': left, 'opacity': opacity});
+                                },
+                                duration: 800,
+                                complete: function(){
+                                    current_fs.hide();
+                                    animating = false;
+                                },
+                                //this comes from the custom easing plugin
+                                easing: 'easeInOutBack'
+                            });
+                            });
+
+                            $(".previous").click(function(){
+                            if(animating) return false;
+                            animating = true;
+
+                            current_fs = $(this).parent();
+                            previous_fs = $(this).parent().prev();
+
+                            //de-activate current step on progressbar
+                            $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+                            //show the previous fieldset
+                            previous_fs.show();
+                            //hide the current fieldset with style
+                            current_fs.animate({opacity: 0}, {
+                                step: function(now, mx) {
+                                    //as the opacity of current_fs reduces to 0 - stored in "now"
+                                    //1. scale previous_fs from 80% to 100%
+                                    scale = 0.8 + (1 - now) * 0.2;
+                                    //2. take current_fs to the right(50%) - from 0%
+                                    left = ((1-now) * 50)+"%";
+                                    //3. increase opacity of previous_fs to 1 as it moves in
+                                    opacity = 1 - now;
+                                    current_fs.css({'left': left});
+                                    previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
+                                },
+                                duration: 800,
+                                complete: function(){
+                                    current_fs.hide();
+                                    animating = false;
+                                },
+                                //this comes from the custom easing plugin
+                                easing: 'easeInOutBack'
+                            });
+                            });
+
+                            $(".submit").click(function () {
+                                $('#processing_data').removeClass('hidden');
+                                $('#msform fieldset').fadeOut(300);
+                                return false;
+                             });
+
+                            });
+
+                    </script>
+                    <script>
+                        $("#rev_fin").click(function () {
+                             $('#processing_data_review').removeClass('hidden');
+                          });
+                    </script>
+                    <script>
+                        $("#hire_fin").click(function () {
+                             $('#processing_data_hire').removeClass('hidden');
+                          });
+                    </script>
+                    <script>
+                        $(".allownumericwithoutdecimal").on("keypress keyup blur",function (event) {
+                               $(this).val($(this).val().replace(/[^\d].+/, ""));
+                                if ((event.which < 48 || event.which > 57)) {
+                                    event.preventDefault();
+                                }
+                            });
+
+                    </script>
+                    <script>
+                        $(document).ready(function () {
+                        $('#id_radio2').click(function () {
+                            $('#div1').show('fast');
+                        });
+                        $('#id_radio1').click(function () {
+                            $('#div1').hide('fast');
+                        });
+                        $('#id_radio4').click(function () {
+                            $('#div2').show('fast');
+                        });
+                        $('#id_radio3').click(function () {
+                            $('#div2').hide('fast');
+                        });
+                        $('#id_radio6').click(function () {
+                            $('#div3').show('fast');
+                            $('#div4').hide('fast');
+                            $('#div5').hide('fast');
+
+                        });
+                        $('#id_radio5').click(function () {
+                            $('#div3').hide('fast');
+                            $('#div4').show('fast');
+                        });
+
+                        $('#id_radio7').click(function () {
+                            $('#div5').show('fast');
+                            $('#div6').hide('fast');
+                        });
+                        $('#id_radio8').click(function () {
+                            $('#div5').hide('fast');
+                            $('#div6').show('fast');
+                        });
+
+                        $('#star-1, #star-2, #star-3, #star-4, #star-5').click(function () {
+                            $('#div7').show('fast');
+                        });
+                        });
+
+
+                    </script>
+                    <script>
+                        $(".affiliate-select").bind("click", function () {
+                        $(this).parents(".affiliate-grid").toggleClass("affiliate-selected");
+                        });
+
+                    </script>
+                    <script src="pay_javascripts/vendor/demo.fix.js"></script> <script src="pay_javascripts/skeuocard.js"></script> <script>
+                        $(document).ready(function(){
+                          var isBrowserCompatible =
+                            $('html').hasClass('ua-ie-10') ||
+                            $('html').hasClass('ua-webkit') ||
+                            $('html').hasClass('ua-firefox') ||
+                            $('html').hasClass('ua-opera') ||
+                            $('html').hasClass('ua-chrome');
+
+                          if(isBrowserCompatible){
+                            window.card = new Skeuocard($("#skeuocard"), {
+                              debug: false
+                            });
+                          }
+                        });
+
+                    </script>
+                    <script>
+                        $(function() {
+                            $('#Next-1').prop('disabled', true);
+
+                            $('#check-1').on('click', function() {
+                                if ($(this).prop('checked') == false) {
+                                    $('#Next-1').prop('disabled', true);
+                                } else {
+                                    $('#Next-1').prop('disabled', false);
+                                }
+                            });
+                            });
+
+                    </script>
+                    <script>
+                        $(function() {
+                            $('#Next-2').prop('disabled', true);
+
+                            $('#check-2').on('click', function() {
+                                if ($(this).prop('checked') == false) {
+                                    $('#Next-2').prop('disabled', true);
+                                } else {
+                                    $('#Next-2').prop('disabled', false);
+                                }
+                            });
+                            });
+
+                    </script>
+                    <script>
+                        $(function() {
+                            if ($('#review1, #review2').val().length == 0) {
+                                $('#Rev_fin').attr('disabled', 'disabled');
+                            }
+                            $('#review2').bind('keydown keyup keypress change', function() {
+                                if ($(this).val().length > 0) {
+                                    $('#Rev_fin').removeAttr('disabled');
+                                } else {
+                                    $('#Rev_fin').attr('disabled', 'disabled');
+                                }
+                            });
+                            });
+
+                    </script>
+                    <script>
+                        $(document).ready(function () {
+                            $('input:radio[name=a_SignatureOption]').prop('checked', false);
+                            $('#commandButton_1_0').attr('disabled', 'true');
+                            $('input:radio[name=a_SignatureOption]').click(function () {
+                            var checkval = $('input:radio[name=a_SignatureOption]:checked').val();
+                            if (checkval == '1' || checkval == '2') {
+                                $('#commandButton_1_0').removeAttr('disabled');
+                            }
+                            });
+                            });
+
+                    </script>
+                    <script>
+                        $(document).ready(function () {
+                            $('input:radio[name=b_SignatureOption]').prop('checked', false);
+                            $('#commandButton_2_0').attr('disabled', 'true');
+                            $('input:radio[name=b_SignatureOption]').click(function () {
+                            var checkval = $('input:radio[name=b_SignatureOption]:checked').val();
+                            if (checkval == '3' || checkval == '4') {
+                                $('#commandButton_2_0').removeAttr('disabled');
+                            }
+                            });
+                            });
+
+                    </script>
+                    <script>
+                        $(document).ready(function () {
+                            $('input:radio[name=c_SignatureOption]').prop('checked', false);
+                            $('#commandButton_3_0').attr('disabled', 'true');
+                            $('input:radio[name=c_SignatureOption]').click(function () {
+                            var checkval = $('input:radio[name=c_SignatureOption]:checked').val();
+                            if (checkval == '5' || checkval == '6') {
+                                $('#commandButton_3_0').removeAttr('disabled');
+                            }
+                            });
+                            });
+
+                    </script>
+                    <script>
+                        $(document).ready(function () {
+                            $('input:radio[name=c_SignatureOption]').prop('checked', false);
+                            $('#commandButton_3_0').attr('disabled', 'true');
+                            $('input:radio[name=c_SignatureOption]').click(function () {
+                            var checkval = $('input:radio[name=c_SignatureOption]:checked').val();
+                            if (checkval == '7' || checkval == '8') {
+                                $('#commandButton_3_0').removeAttr('disabled');
+                            }
+                            });
+                            });
+
+                    </script>
+                    <script>
+                        $(document).ready(function () {
+                        $('#mail_signup_modal').click(function () {
+                            $('#div_mail_here').show('fast');
+                            $('#mail_signup_modal, #fb_signup_modal, #twitter_signup_modal, #member_modal_head').hide('fast');
+
+                        });
+                        $('#go_back').click(function () {
+                            $('#div_mail_here').hide('fast');
+                            $('#mail_signup_modal, #fb_signup_modal, #twitter_signup_modal, #member_modal_head').show('fast');
+                        });
+
+                         $('#already_member').click(function () {
+                            $('#member_login_m').show('fast');
+                            $('#mail_signup_modal, #fb_signup_modal, #twitter_signup_modal, #member_modal_head, #div_mail_here').hide('fast');
+                        });
+                        $('#go_back_2').click(function () {
+                            $('#member_login_m').hide('fast');
+                            $('#mail_signup_modal, #fb_signup_modal, #twitter_signup_modal, #member_modal_head').show('fast');
+                        });
+
+                        });
+
+                    </script>
