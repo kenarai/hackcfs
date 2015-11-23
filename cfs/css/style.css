@@ -1,0 +1,85 @@
+input{
+  width: 100%;
+}
+
+.no-padding{
+  padding: 0px;
+}
+
+.border{
+  
+}
+
+.cfs-logo{
+  padding-left: 5%;
+}
+.embed-responsive.embed-responsive-16by9 {
+    padding-bottom: 45%;
+}
+
+.top-nav{
+  background-color: #f3f6f8;
+  padding-left: 5%;
+}
+.top-nav img{
+  width: 85%;
+}
+.form-horizontal .form-group{
+  margin: 0% 4% 5% 4%;
+}
+
+.navbar.navbar-default.no-margin{
+  margin-bottom: 0px;
+}
+
+
+.no-padding.navbar-brand img{
+  max-height: 100%;
+}
+
+.center-block{
+  width: 100%;
+}
+
+
+fieldset{
+   background: #FCFCFC ;
+   padding: 1%;
+}
+.addfields{
+   margin: 10px 0;
+}
+
+#choicesDisplay {
+   padding: 1%;
+   background: rgb(227, 250, 227);
+   color: rgb(9, 56, 9);
+}
+.remove{
+   background: #C76868 ;
+   color: #FFF;
+   font-weight: bold;
+   font-size: 21px;
+   border: 0;
+   cursor: pointer;
+   display: inline-block;
+   padding: 4px 9px;
+   vertical-align: top;
+   line-height: 100%;
+}
+.add{
+   background: #66ff66 ;
+   color: #FFF;
+   font-weight: bold;
+   font-size: 21px;
+   border: 0;
+   cursor: pointer;
+   display: inline-block;
+   padding: 4px 9px;
+   vertical-align: top;
+   line-height: 100%;
+}
+input[type="text"],
+select{
+   padding:5px;
+}

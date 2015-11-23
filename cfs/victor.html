@@ -3,15 +3,295 @@
   <head>
    <link data-require="bootstrap-css@3.2.0" data-semver="3.2.0" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
    <script data-require="ui-bootstrap@0.11.0" data-semver="0.11.0" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.min.js"></script>
+   <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
    <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+   <script src="js/victor.js"></script>
+    <script src="js/angular.js"></script>
+   <link rel="stylesheet" href="css/style.css" type="text/css">
     <meta charset="utf-8">
     <title>Community Food Share</title>
+    <script data-require="angular.js@1.3.1" data-semver="1.3.1" src="http://code.angularjs.org/1.3.1/angular.js"></script>
   </head>
+
+
   <body>
-    
-    Hello world !
-    
+    <nav class="navbar navbar-default no-margin">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="no-padding navbar-brand" href="#">
+          <img src="img/cfslogo.png" alt="Community Food Shelter" />
+        </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+      <div class="no-padding col-xs-12 col-sm-12 border">
+        <div class="img-responsive corp-chall-img no-padding col-sm-12 col-xs-12 top-banner-message">
+          <img class="center-block" src="img/corporate_1025.png" alt="Corporate Challenge Hero" />
+        </div>
+      </div>
+      <div class="no-padding body-row col-xs-12 col-sm-12 border">
+        <div class="img-responsive no-padding col-sm-12 col-xs-12 border" style="    margin-bottom: 50px;">
+          <img class="center-block" src="img/jointoday.png" alt="Join Corporate Challenge Today"/>
+        </div>
+        <div class="no-padding col-sm-3 col-xs-12 border">
+
+
+          </form>
+
+        </div>
+        <div class="no-padding col-sm-6 col-xs-12 border">
+        <form id="surveyForm" method="post" class="form-horizontal">
+            <div class="form-group">
+              <div class="">
+                <label for="inputName">Corporation Name</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Corporation Name">
+              </div>
+              <div class="">
+                <label for="inputEmployeeAmount">Employee Count</label>
+                <input type="text" class="form-control" id="employeeCount" placeholder="#">
+              </div>
+            </div>
+
+
+        <div ng-app="angularjs-starter" ng-controller="MainCtrl">
+         <fieldset  data-ng-repeat="choice in choices">
+            <input type="text" ng-model="choice.name" name="" placeholder="Add a team name">
+            <button class="remove" ng-show="$last" ng-click="removeChoice()">-</button>
+            <button class="add" ng-click="addNewChoice()">+</button>
+         </fieldset>
+       </div>
+
+
+
+            <div class="form-group">
+              <label for="inputEmail">Primary Contact Email address</label>
+              <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="inputPhoneNumber">Primary Contact Phone number</label>
+              <input type="password" class="form-control" id="inputPhoneNumber" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputFile">Upload Logo</label>
+              <input type="file" id="companyLogo">
+            </div>
+            <div class="form-group">
+              <label for="inputDescription">Describe your company</label>
+              <textarea rows="3" class="form-control" id="description" placeholder="Tell us why you're joining"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+        <div class="no-padding col-sm-3 col-xs-12 border">
+
+          <script>
+          $(document).ready(function() {
+              // The maximum number of options
+              var MAX_OPTIONS = 5;
+
+              $('#surveyForm')
+                  .formValidation({
+                      framework: 'bootstrap',
+                      icon: {
+                          valid: 'glyphicon glyphicon-ok',
+                          invalid: 'glyphicon glyphicon-remove',
+                          validating: 'glyphicon glyphicon-refresh'
+                      },
+                      fields: {
+                          question: {
+                              validators: {
+                                  notEmpty: {
+                                      message: 'The question required and cannot be empty'
+                                  }
+                              }
+                          },
+                          'option[]': {
+                              validators: {
+                                  notEmpty: {
+                                      message: 'The option required and cannot be empty'
+                                  },
+                                  stringLength: {
+                                      max: 100,
+                                      message: 'The option must be less than 100 characters long'
+                                  }
+                              }
+                          }
+                      }
+                  })
+
+                  // Add button click handler
+                  .on('click', '.addButton', function() {
+                      var $template = $('#optionTemplate'),
+                          $clone    = $template
+                                          .clone()
+                                          .removeClass('hide')
+                                          .removeAttr('id')
+                                          .insertBefore($template),
+                          $option   = $clone.find('[name="option[]"]');
+
+                      // Add new field
+                      $('#surveyForm').formValidation('addField', $option);
+                  })
+
+                  // Remove button click handler
+                  .on('click', '.removeButton', function() {
+                      var $row    = $(this).parents('.form-group'),
+                          $option = $row.find('[name="option[]"]');
+
+                      // Remove element containing the option
+                      $row.remove();
+
+                      // Remove field
+                      $('#surveyForm').formValidation('removeField', $option);
+                  })
+
+                  // Called after adding new field
+                  .on('added.field.fv', function(e, data) {
+                      // data.field   --> The field name
+                      // data.element --> The new field element
+                      // data.options --> The new field options
+
+                      if (data.field === 'option[]') {
+                          if ($('#surveyForm').find(':visible[name="option[]"]').length >= MAX_OPTIONS) {
+                              $('#surveyForm').find('.addButton').attr('disabled', 'disabled');
+                          }
+                      }
+                  })
+
+                  // Called after removing the field
+                  .on('removed.field.fv', function(e, data) {
+                     if (data.field === 'option[]') {
+                          if ($('#surveyForm').find(':visible[name="option[]"]').length < MAX_OPTIONS) {
+                              $('#surveyForm').find('.addButton').removeAttr('disabled');
+                          }
+                      }
+                  });
+          });
+          </script>        </div>
+        <div class="no-padding col-sm-12 col-xs-12 border">
+          lafadssdkjf
+        </div>
+      </div>
+      <div class="no-padding col-xs-12 col-sm-1 border"></div>
+      <div class="no-padding col-xs-12 col-sm-10 border">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5p0zFIYkO4s?start=172"></iframe>
+        </div>
+      </div>
+    </div>
+
   </body>
+  
+ 
+  
+  <script>
+$(document).ready(function() {
+    // The maximum number of options
+    var MAX_OPTIONS = 5;
+
+    $('#surveyForm')
+        .formValidation({
+            framework: 'bootstrap',
+            icon: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                question: {
+                    validators: {
+                        notEmpty: {
+                            message: 'The question required and cannot be empty'
+                        }
+                    }
+                },
+                'option[]': {
+                    validators: {
+                        notEmpty: {
+                            message: 'The option required and cannot be empty'
+                        },
+                        stringLength: {
+                            max: 100,
+                            message: 'The option must be less than 100 characters long'
+                        }
+                    }
+                }
+            }
+        })
+
+        // Add button click handler
+        .on('click', '.addButton', function() {
+            var $template = $('#optionTemplate'),
+                $clone    = $template
+                                .clone()
+                                .removeClass('hide')
+                                .removeAttr('id')
+                                .insertBefore($template),
+                $option   = $clone.find('[name="option[]"]');
+
+            // Add new field
+            $('#surveyForm').formValidation('addField', $option);
+        })
+
+        // Remove button click handler
+        .on('click', '.removeButton', function() {
+            var $row    = $(this).parents('.form-group'),
+                $option = $row.find('[name="option[]"]');
+
+            // Remove element containing the option
+            $row.remove();
+
+            // Remove field
+            $('#surveyForm').formValidation('removeField', $option);
+        })
+
+        // Called after adding new field
+        .on('added.field.fv', function(e, data) {
+            // data.field   --> The field name
+            // data.element --> The new field element
+            // data.options --> The new field options
+
+            if (data.field === 'option[]') {
+                if ($('#surveyForm').find(':visible[name="option[]"]').length >= MAX_OPTIONS) {
+                    $('#surveyForm').find('.addButton').attr('disabled', 'disabled');
+                }
+            }
+        })
+
+        // Called after removing the field
+        .on('removed.field.fv', function(e, data) {
+           if (data.field === 'option[]') {
+                if ($('#surveyForm').find(':visible[name="option[]"]').length < MAX_OPTIONS) {
+                    $('#surveyForm').find('.addButton').removeAttr('disabled');
+                }
+            }
+        });
+});
+</script>
 </html>

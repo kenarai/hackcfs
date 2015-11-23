@@ -19,14 +19,26 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+                        <link href="pay_styles/skeuocard.reset.css" rel="stylesheet">
+                        <link href="pay_styles/skeuocard.css" rel="stylesheet">
+                        <script src="pay_javascripts/vendor/cssua.min.js"></script>
         <!-- Hello world : somehting custom  -->
         <link href="css/common.css" rel="stylesheet">
         <script src="js/ken.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="blueimp-gallery.min.css">
+                
+                
+                
+<script src='http://demo.alxmedia.se/hueman/wp-content/themes/hueman/js/jquery.sharrre.min.js?ver=3.8.1'></script>
+<script src="https://js.braintreegateway.com/v2/braintree.js"></script>
+
+
+
     </head>
     <body>
-        <div class="hero_cover">
+      <div class="hero_cover">
             <div class="hero_dramatic">
                
                <div class="brand_logo"></div>
@@ -39,20 +51,40 @@
             </div>
         </div>
         <div class="hello_hl">Participating organizations</div>
+        
+        <div class="ranking_exp">
+           <div class="overall_p">
+              <i class="fa fa-circle op_cir"></i>Overall points
+              
+           </div>
+            <div class="points_p_e">
+            <i class="fa fa-circle ppe_cir"></i>Points per employee
+            
+            </div>
+        </div>
+        
         <ul id="grid">
             <li>
+               
+               <div class="p_op_li">1st</div>
+               
+               
+               
                 <div class="g_overlay">
                     <a data-toggle="modal" href="#modal_donation" class="inner_md_btn">Make a donation </a>
                 </div>
                 <div class="company_rep" style="    background-image: url('https://ksr-ugc.imgix.net/photos/258/SBlock_Blk.original.jpg?v=&w=220&h=220&fit=crop&auto=format&q=92&s=4a19046c1b29ed0bf750d8e4ee00dc6c');"></div>
             </li>
             <li>
+            
+               <div class="p_op_li">3rd</div>
                 <div class="g_overlay">
                     <a data-toggle="modal" href="#modal_donation" class="inner_md_btn">Make a donation </a>
                 </div>
                 <div class="company_rep" style="    background-image: url('https://ksr-ugc.imgix.net/photos/237/sparkfunlogo_kickstarter.full.original.jpg?v=&w=220&h=220&fit=crop&auto=format&q=92&s=f4ef869c5c2e53403969bb796a614026');"></div>
             </li>
             <li>
+            <div class="p_pe_li">2nd</div>
             <div class="g_overlay">
                     <a data-toggle="modal" href="#modal_donation" class="inner_md_btn">Make a donation </a>
                 </div>
@@ -71,6 +103,10 @@
                 <div class="company_rep" style="background-image: url('https://ksr-ugc.imgix.net/photos/236/t.original.png?v=&w=220&h=220&fit=crop&auto=format&q=92&s=c12999df0ee4b43fefde3f0c536d10c5');"></div>
             </li>
              <li style="background: rgb(0, 174, 254) none repeat scroll 0% 0%;">
+             
+            <div class="p_pe_li adj_3">1st</div>
+               <div class="p_op_li">2nd</div>
+             
             <div class="g_overlay">
                     <a data-toggle="modal" href="#modal_donation" class="inner_md_btn">Make a donation </a>
                 </div>
@@ -87,6 +123,51 @@
     margin: 36px auto 40px;"></div>
                 </div>
             </li>
+            
+            
+            <li>
+            <div class="g_overlay">
+                    <a data-toggle="modal" href="#modal_donation" class="inner_md_btn">Make a donation </a>
+                </div>
+                <div class="company_rep" style="background-image: url('https://ksr-ugc.imgix.net/photos/42/foursquare_400x400_2.original.png?v=&w=220&h=220&fit=crop&auto=format&q=92&s=308dcda193f07e602a8a71ace5625591');"></div>
+            </li>
+            
+            <li>
+            <div class="g_overlay">
+                    <a data-toggle="modal" href="#modal_donation" class="inner_md_btn">Make a donation </a>
+                </div>
+                <div class="company_rep" style="background-image: url('https://ksr-ugc.imgix.net/photos/176/blip_logo.original.png?v=&w=220&h=220&fit=crop&auto=format&q=92&s=e7b5966e736ab93148fd62a9a4b84de5');"></div>
+            </li>
+            
+            <li>
+            
+            <div class="g_overlay">
+                    <a data-toggle="modal" href="#modal_donation" class="inner_md_btn">Make a donation </a>
+                </div>
+                <div class="company_rep" style="background-image: url('https://ksr-ugc.imgix.net/photos/97/kickbot.original.gif?v=&w=220&h=220&fit=crop&auto=format&frame=1&q=92&s=4e1182cf2ef2ec884e0182e213bcfce8');"></div>
+            </li>
+            
+            <li>
+            
+            <div class="p_pe_li">3rd</div>
+            <div class="g_overlay">
+                    <a data-toggle="modal" href="#modal_donation" class="inner_md_btn">Make a donation </a>
+                </div>
+                <div class="company_rep" style="background-image: url('https://ksr-ugc.imgix.net/photos/233/n25340478890_1525031_4048567.original.jpg?v=&w=220&h=220&fit=crop&auto=format&q=92&s=db6c61856aa8dd980e88e6415fae27af');"></div>
+            </li>
+            
+            <li>
+            <div class="g_overlay">
+                    <a data-toggle="modal" href="#modal_donation" class="inner_md_btn">Make a donation </a>
+                </div>
+                <div class="company_rep" style="background-image: url('https://ksr-ugc.imgix.net/photos/92/logo-badge-name.original.jpg?v=&w=220&h=220&fit=crop&auto=format&q=92&s=c249af0f3d1c732f46a743045932d8cb');"></div>
+            </li>
+            
+            
+            
+            
+            
+            
         </ul>
         <div class="more_explanation"></div>
         <div class="modal" id="modal_donation">
@@ -96,7 +177,7 @@
                         <div id="donation_form" class="animated fadeInUp">
                             <fieldset class="modal_emb_1">
                                 <div id="inner_container">
-                                    <div class="inner initial_state" style="background-image: url('http://www.projectknow.com/wp-content/uploads/620x290xBoulder-Running.jpg.pagespeed.ic.rFE4F13u3p.jpg');">
+                                    <div class="inner initial_state" style="background-image: url('img/running.jpg');">
                                         <div class="dramatic_overlay"></div>
                                         <div class="user_continer">
                                             <div class="main_avatar" style="    background-image: url('img/perch_logo.png');
@@ -113,17 +194,17 @@
                                     <div class="pic_cont">
                                         <div class="inpin_l">
                                             <div id="links">
-                                                <a href="img/13.png"  data-gallery>
-                                                <img class="inner_img_galler_tn" style="background-image: url('img/13.png');">
+                                                <a href="img/r1.png"  data-gallery>
+                                                <img class="inner_img_galler_tn" style="background-image: url('img/r1.png');">
                                                 </a>
-                                                <a href="img/14.png"  data-gallery>
-                                                <img class="inner_img_galler_tn" style="background-image: url('img/14.png');" >
+                                                <a href="img/r2.png"  data-gallery>
+                                                <img class="inner_img_galler_tn" style="background-image: url('img/r2.png');" >
                                                 </a>
-                                                <a href="img/12.png"  data-gallery>
-                                                <img class="inner_img_galler_tn" style="background-image: url('img/12.png');">
+                                                <a href="img/r3.png"  data-gallery>
+                                                <img class="inner_img_galler_tn" style="background-image: url('img/r3.png');">
                                                 </a>
-                                                <a href="img/7.png"  data-gallery>
-                                                <img class="inner_img_galler_tn" style="background-image: url('img/7.png');">
+                                                <a href="img/r4.png"  data-gallery>
+                                                <img class="inner_img_galler_tn" style="background-image: url('img/r4.png');">
                                                 </a> 
                                             </div>
                                             <div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">
@@ -162,7 +243,7 @@
                                         　　
                                         <h1>September 21, 2015</h1>
                                         　
-                                        <p>This year, we are holding a 5K run to raise money for community food share. Join us!</p>
+                                        <p>This year, we are holding a 5K run to raise money for community food share. Join us and help starving children!</p>
                                     </div>
                                     <div ng-app="progressApp" ng-controller="progressBars">
                                         <div class="fund" ng-repeat="item in progressData">
@@ -172,9 +253,9 @@
                                                 </div>
                                             </div>
                                             <span class="goal">
-                                            <span class="percent" ng-show="((item.raised / item.goal) * 100) <= 100">{{((item.raised / item.goal) * 100) | number:0}}%</span>
+                                            <span class="percent" ng-show="((item.raised / item.goal) * 100) <= 100">Raised {{((item.raised / item.goal) * 100) | number:0}}% of</span>
                                             
-                                            &nbsp;&compfn;&nbsp; 
+                                            &nbsp;&nbsp; 
                                             
                                             
                                             <span class="adj_2">Goal: {{item.goal | currency:"$":0}}</span>
@@ -184,6 +265,13 @@
                                     </div>
                                 </div>
                                 <div class="action_cont">
+                                
+                                <div class="social-share">
+  <div id="facebook" data-url="http://communityfoodshare.org/">
+  </div>
+
+</div>
+                                
                                 </div>
                                 <input type="submit" name="next_rs" class="next_rs action-button first_next" value="Donate" />
                             </fieldset>
@@ -191,6 +279,7 @@
                                 <div id="inner_container">
                                     <div class="inner mb_n_25">
                                         <div class="thank_you_for_proceeding">
+                                        <i class="fa fa-search"></i>
                                         </div>
                                         <p class="section_hl">Which team would you like to donate to?</p>
                                         <p class="section_p">If there's a team you would like to donate to, find them below. <a href="https://commfoodshare.ejoinme.org/MyPages/DonationPage/tabid/222705/Default.aspx">For general donation, click here</a></p>
@@ -202,64 +291,64 @@
                                                     <div class="affiliate-grid">
                                                         <input type="radio" name="org_selection" id="input1" class="affiliate-select"/>
                                                         <label for="input1">
-                                                        <img src="80/1.jpg" class="img-circle" alt="" class="affiliate-prod-img"/>
-                                                        <p class="check_mark_team"><i class="fa fa-check-circle"></i></p>
+                                                        <img src="https://pbs.twimg.com/profile_images/378800000743122475/4b1b8d56500f4bd56748282022c6341f_bigger.jpeg" class="img-circle" alt="" class="affiliate-prod-img"/>
+                                                        <p class="check_mark_team"><i class="fa fa-check"></i></p>
                                                         </label>
                                                         <p>team name</p>
                                                     </div>
                                                     <div class="affiliate-grid">
                                                         <input type="radio" name="org_selection" id="input2" class="affiliate-select"/>
                                                         <label for="input2">
-                                                        <img src="80/2.jpg" class="img-circle" alt="" class="affiliate-prod-img"/>
-                                                         <p class="check_mark_team"><i class="fa fa-check-circle"></i></p>
+                                                        <img src="https://pbs.twimg.com/profile_images/465553363535265793/ppXOdNmp_bigger.png" class="img-circle" alt="" class="affiliate-prod-img"/>
+                                                         <p class="check_mark_team"><i class="fa fa-check"></i></p>
                                                         </label>
                                                         <p>team name</p>
                                                     </div>
                                                     <div class="affiliate-grid">
                                                         <input type="radio" name="org_selection" id="input3" class="affiliate-select"/>
                                                         <label for="input3">
-                                                        <img src="80/3.jpg" class="img-circle" alt="" class="affiliate-prod-img"/>
-                                                        <p class="check_mark_team"><i class="fa fa-check-circle"></i></p>
+                                                        <img src="https://38.media.tumblr.com/avatar_017c6dd2264b_128.png" class="img-circle" alt="" class="affiliate-prod-img"/>
+                                                        <p class="check_mark_team"><i class="fa fa-check"></i></p>
                                                         </label>
                                                         <p>team name</p>
                                                     </div>
                                                     <div class="affiliate-grid">
                                                         <input type="radio" name="org_selection" id="input4" class="affiliate-select"/>
                                                         <label for="input3">
-                                                        <img src="80/4.jpg" class="img-circle" alt="" class="affiliate-prod-img"/>
-                                                        <p class="check_mark_team"><i class="fa fa-check-circle"></i></p>
+                                                        <img src="https://31.media.tumblr.com/avatar_f0476ec95523_128.png" class="img-circle" alt="" class="affiliate-prod-img"/>
+                                                        <p class="check_mark_team"><i class="fa fa-check"></i></p>
                                                         </label>
                                                         <p>team name</p>
                                                     </div>
                                                     <div class="affiliate-grid">
                                                         <input type="radio" name="org_selection" id="input5" class="affiliate-select"/>
                                                         <label for="input5">
-                                                        <img src="80/5.jpg" class="img-circle" alt="" class="affiliate-prod-img"/>
-                                                        <p class="check_mark_team"><i class="fa fa-check-circle"></i></p>
+                                                        <img src="https://38.media.tumblr.com/avatar_0460a24eb1ea_128.png" class="img-circle" alt="" class="affiliate-prod-img"/>
+                                                        <p class="check_mark_team"><i class="fa fa-check"></i></p>
                                                         </label>
                                                         <p>team name</p>
                                                     </div>
                                                     <div class="affiliate-grid">
                                                         <input type="radio" name="org_selection" id="input6" class="affiliate-select"/>
                                                         <label for="input6">
-                                                        <img src="80/6.jpg" class="img-circle" alt="" class="affiliate-prod-img"/>
-                                                        <p class="check_mark_team"><i class="fa fa-check-circle"></i></p>
+                                                        <img src="https://33.media.tumblr.com/avatar_bbe0744b669b_128.png" class="img-circle" alt="" class="affiliate-prod-img"/>
+                                                        <p class="check_mark_team"><i class="fa fa-check"></i></p>
                                                         </label>
                                                         <p>team name</p>
                                                     </div>
                                                     <div class="affiliate-grid">
                                                         <input type="radio" name="org_selection" id="input7" class="affiliate-select"/>
                                                         <label for="input7">
-                                                        <img src="80/7.jpg" class="img-circle" alt="" class="affiliate-prod-img"/>
-                                                        <p class="check_mark_team"><i class="fa fa-check-circle"></i></p>
+                                                        <img src="https://31.media.tumblr.com/avatar_f0047cc1cd7a_128.png" class="img-circle" alt="" class="affiliate-prod-img"/>
+                                                        <p class="check_mark_team"><i class="fa fa-check"></i></p>
                                                         </label>
                                                         <p>team name</p>
                                                     </div>
                                                     <div class="affiliate-grid">
                                                         <input type="radio" name="org_selection" id="input8" class="affiliate-select"/>
                                                         <label for="input7">
-                                                        <img src="80/8.jpg" class="img-circle" alt="" class="affiliate-prod-img"/>
-                                                        <p class="check_mark_team"><i class="fa fa-check-circle"></i></p>
+                                                        <img src="https://31.media.tumblr.com/avatar_ee7cd413eb18_128.png" class="img-circle" alt="" class="affiliate-prod-img"/>
+                                                        <p class="check_mark_team"><i class="fa fa-check"></i></p>
                                                         </label>
                                                         <p>team name</p>
                                                     </div>
@@ -267,7 +356,7 @@
                                                         <label for="input9">
                                                         <input type="radio" name="org_selection" id="input9" class="affiliate-select"/>
                                                         <img src="80/9.jpg" class="img-circle" alt="" class="affiliate-prod-img"/>
-                                                        <p class="check_mark_team"><i class="fa fa-check-circle"></i></p>
+                                                        <p class="check_mark_team"><i class="fa fa-check"></i></p>
                                                         </label>
                                                         <p>team name</p>
                                                     </div>
@@ -285,13 +374,45 @@
                             <fieldset class="modal_emb_1">
                                 <div id="inner_container">
                                     <div class="inner">
-                                           <p class="section_hl">
+                                     <div class="thank_you_for_proceeding">
+                                        <i class="fa fa-thumbs-o-up"></i>
+                                        </div>
+                                           <p class="section_hl" style="margin-top: -18px; font-size: 24px;">
                                            Let's help out.
                                            </p>
                                     </div>
-                                    <div class="field">
-                                    
-                                    PAYMENT 
+                                    <div class="field" style="margin-top: -35px;">
+                                    <form action="javascript:void(0);" method="get" class="modal_center">
+                                                                                            <div class="modal_align_1">
+                                                                                                <input class="radio" id="id_radio4" type="radio" name="b_SignatureOption" value="4">
+                                                                                                <label tabindex="id_radio4" for="id_radio4" class="radio-label">Donate as an employee.</label>
+                                                                                                <br/>
+                                                                                                <input class="radio" id="id_radio3" type="radio" name="b_SignatureOption" value="3">
+                                                                                                <label tabindex="id_radio3" for="id_radio3" class="radio-label">Donate as third-party.</label>
+                                                                                                <br/>
+                                                                                                
+                                                                                                
+                                                                                                
+                                                                                                
+                                                            <div id="div2" class="modal_js_option_1" style="margin-top: 40px !important;">
+                                                            
+                                                            
+                                                            <form>
+ <div id="dropin-container"></div>
+</form>
+                                                            
+                                                            </div>
+                                                            
+                                                            <div id="div3" class="modal_js_option_1" style="margin-top: 40px !important;">
+                                                            
+                                                            
+                                                            <form>
+ <div id="dropin-container"></div>
+</form>
+                                                            
+                                                            </div>
+                                                                                        </div>
+                                                                                        </form>
                                     
                                     </div>
                                 </div>
@@ -312,7 +433,7 @@
                                     </div>
                                 </div>
                                 <h1 class="modal_fin_process">
-                                    Processing...
+                                    Thank you!
                                 </h1>
                             </div>
                         </div>
@@ -320,6 +441,16 @@
                 </div>
             </div>
         </div>
+           <script>
+           
+           
+           
+           braintree.setup("eyJ2ZXJzaW9uIjoyLCJhdXRob3JpemF0aW9uRmluZ2VycHJpbnQiOiI5NmRlNmMyNDJkZTgwNzU0YzNiOTg5MmQwNzlhNWJlYTI5ZTE0MmQ0MjlhZjA0MTQ5N2M0YzUyZmU4MTAyYmQ4fGNyZWF0ZWRfYXQ9MjAxNS0wNy0wM1QxNDozMjo0OS43ODMzNzEwODcrMDAwMFx1MDAyNm1lcmNoYW50X2lkPWRjcHNweTJicndkanIzcW5cdTAwMjZwdWJsaWNfa2V5PTl3d3J6cWszdnIzdDRuYzgiLCJjb25maWdVcmwiOiJodHRwczovL2FwaS5zYW5kYm94LmJyYWludHJlZWdhdGV3YXkuY29tOjQ0My9tZXJjaGFudHMvZGNwc3B5MmJyd2RqcjNxbi9jbGllbnRfYXBpL3YxL2NvbmZpZ3VyYXRpb24iLCJjaGFsbGVuZ2VzIjpbXSwiZW52aXJvbm1lbnQiOiJzYW5kYm94IiwiY2xpZW50QXBpVXJsIjoiaHR0cHM6Ly9hcGkuc2FuZGJveC5icmFpbnRyZWVnYXRld2F5LmNvbTo0NDMvbWVyY2hhbnRzL2RjcHNweTJicndkanIzcW4vY2xpZW50X2FwaSIsImFzc2V0c1VybCI6Imh0dHBzOi8vYXNzZXRzLmJyYWludHJlZWdhdGV3YXkuY29tIiwiYXV0aFVybCI6Imh0dHBzOi8vYXV0aC52ZW5tby5zYW5kYm94LmJyYWludHJlZWdhdGV3YXkuY29tIiwiYW5hbHl0aWNzIjp7InVybCI6Imh0dHBzOi8vY2xpZW50LWFuYWx5dGljcy5zYW5kYm94LmJyYWludHJlZWdhdGV3YXkuY29tIn0sInRocmVlRFNlY3VyZUVuYWJsZWQiOnRydWUsInRocmVlRFNlY3VyZSI6eyJsb29rdXBVcmwiOiJodHRwczovL2FwaS5zYW5kYm94LmJyYWludHJlZWdhdGV3YXkuY29tOjQ0My9tZXJjaGFudHMvZGNwc3B5MmJyd2RqcjNxbi90aHJlZV9kX3NlY3VyZS9sb29rdXAifSwicGF5cGFsRW5hYmxlZCI6dHJ1ZSwicGF5cGFsIjp7ImRpc3BsYXlOYW1lIjoiQWNtZSBXaWRnZXRzLCBMdGQuIChTYW5kYm94KSIsImNsaWVudElkIjpudWxsLCJwcml2YWN5VXJsIjoiaHR0cDovL2V4YW1wbGUuY29tL3BwIiwidXNlckFncmVlbWVudFVybCI6Imh0dHA6Ly9leGFtcGxlLmNvbS90b3MiLCJiYXNlVXJsIjoiaHR0cHM6Ly9hc3NldHMuYnJhaW50cmVlZ2F0ZXdheS5jb20iLCJhc3NldHNVcmwiOiJodHRwczovL2NoZWNrb3V0LnBheXBhbC5jb20iLCJkaXJlY3RCYXNlVXJsIjpudWxsLCJhbGxvd0h0dHAiOnRydWUsImVudmlyb25tZW50Tm9OZXR3b3JrIjp0cnVlLCJlbnZpcm9ubWVudCI6Im9mZmxpbmUiLCJ1bnZldHRlZE1lcmNoYW50IjpmYWxzZSwiYnJhaW50cmVlQ2xpZW50SWQiOiJtYXN0ZXJjbGllbnQzIiwibWVyY2hhbnRBY2NvdW50SWQiOiJzdGNoMm5mZGZ3c3p5dHc1IiwiY3VycmVuY3lJc29Db2RlIjoiVVNEIn0sImNvaW5iYXNlRW5hYmxlZCI6dHJ1ZSwiY29pbmJhc2UiOnsiY2xpZW50SWQiOiIxMWQyNzIyOWJhNThiNTZkN2UzYzAxYTA1MjdmNGQ1YjQ0NmQ0ZjY4NDgxN2NiNjIzZDI1NWI1NzNhZGRjNTliIiwibWVyY2hhbnRBY2NvdW50IjoiY29pbmJhc2UtZGV2ZWxvcG1lbnQtbWVyY2hhbnRAZ2V0YnJhaW50cmVlLmNvbSIsInNjb3BlcyI6ImF1dGhvcml6YXRpb25zOmJyYWludHJlZSB1c2VyIiwicmVkaXJlY3RVcmwiOiJodHRwczovL2Fzc2V0cy5icmFpbnRyZWVnYXRld2F5LmNvbS9jb2luYmFzZS9vYXV0aC9yZWRpcmVjdC1sYW5kaW5nLmh0bWwiLCJlbnZpcm9ubWVudCI6Im1vY2sifSwibWVyY2hhbnRJZCI6ImRjcHNweTJicndkanIzcW4iLCJ2ZW5tbyI6Im9mZmxpbmUiLCJhcHBsZVBheSI6eyJzdGF0dXMiOiJtb2NrIiwiY291bnRyeUNvZGUiOiJVUyIsImN1cnJlbmN5Q29kZSI6IlVTRCIsIm1lcmNoYW50SWRlbnRpZmllciI6Im1lcmNoYW50LmNvbS5icmFpbnRyZWVwYXltZW50cy5zYW5kYm94LkJyYWludHJlZS1EZW1vIiwic3VwcG9ydGVkTmV0d29ya3MiOlsidmlzYSIsIm1hc3RlcmNhcmQiLCJhbWV4Il19fQ==", "dropin", {
+ container: "dropin-container"
+});
+           
+           
+           </script>
         <script>
             $(function() {
                 $('#Next-1').prop('disabled', true);
@@ -451,8 +582,9 @@
             $('#id_radio4').click(function () {
                 $('#div2').show('fast');
             });
+            
             $('#id_radio3').click(function () {
-                $('#div2').hide('fast');
+                $('#div2').show('fast');
             });
             $('#id_radio6').click(function () {
                 $('#div3').show('fast');
@@ -588,6 +720,23 @@
                 }
             
         </script>
+        <script>
+
+$('#facebook').sharrre({
+  share: {
+    facebook: true
+  },
+  template: '<a class="box" href="#"><div class="share"><i class="fa fa-facebook"></i></div><div class="count" href="#">{total}</div></a>',
+  enableHover: false,
+  enableTracking: true,
+  click: function(api, options){
+    api.simulateClick();
+    api.openPopup('facebook');
+  }
+});
+        
+        </script>
+
         <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
     </body>
 </html>
